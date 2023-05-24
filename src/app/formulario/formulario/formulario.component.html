@@ -1,0 +1,46 @@
+<div class="titulo">
+    <h1>Pagos360</h1>
+    <h4>Complete el siguiente formulario</h4>
+</div>
+<form class="form-container">
+    <div class="mb-3">
+        <input name = "fecha" type="date" (change)="formatDate()" [(ngModel)]="fechaSeleccionada" required
+        >
+    </div>
+    <div>
+<button (click)="buscar()" [disabled]="!fechaSeleccionada">Buscar</button>
+    </div>
+    
+  </form>
+  <hr>
+  <br>
+  <div *ngIf="mensajeDeError" class="error-message">{{ mensajeDeError }}</div>
+  <div *ngIf="mensajeDeSuccess" class="success-message">{{ mensajeDeSuccess }}</div>
+  <br>
+  <hr>
+<div *ngIf="datos.data.length > 0">
+    <table class="table">
+        <thead>
+          <tr>
+            <th>Descripción</th>
+            <th>Monto Pagado</th>
+            <th>Fecha de Pago</th>
+            <th>Nombre del Pagador</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr *ngFor="let item of datos?.data">
+            <td>{{ item.description }}</td>
+            <td>{{ item.amount_paid }}</td>
+            <td>{{ item.payment_date }}</td>
+            <td>{{ item.payer_name }}</td>
+          </tr>
+        </tbody>
+    </table>
+    <div>
+        
+    </div>
+  
+</div>
+
+  

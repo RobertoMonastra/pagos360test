@@ -1,0 +1,121 @@
+
+    /* .titulo{
+        text-align: center;
+        font-family: Arial, Helvetica, sans-serif;
+    } */
+
+    .titulo {
+        text-align: center; /* alinear el texto al centro */
+        margin-bottom: 30px; /* agregar un margen inferior para separar del formulario */
+      }
+      
+      .titulo h1 {
+        font-size: 3rem; /* tamaño de fuente para el título principal */
+        color: #007bff; /* color de fuente azul */
+        margin-bottom: 10px; /* agregar un margen inferior para separar del subtitulo */
+      }
+      
+      .titulo h4 {
+        font-size: 1.5rem; /* tamaño de fuente para el subtitulo */
+        color: #333; /* color de fuente gris oscuro */
+      }
+  
+      .invalid {
+        background-color: #ffcccc;
+      }
+      
+  
+    .form-container {
+      max-width: 500px;
+      margin: auto;
+      font-size: 20px;
+    }
+  
+    .form-label {
+      font-size: 1.1rem;
+      font-weight: 500;
+      margin-bottom: 0.5rem;
+      color: #444;
+    }
+  
+    .form-control:focus {
+      outline: none;
+      border-color: #0056b3;
+    }
+  
+    .form-control {
+      border: 2px solid #ccc;
+      border-radius: 4px;
+      font-size: 1rem;
+      padding: 0.5rem;
+      margin-bottom: 1rem;
+      transition: border-color 0.2s ease-in-out;
+    }
+    
+    .form-container label {
+      display: block;
+      margin-bottom: 5px;
+    }
+    
+    .form-container input {
+      width: 100%;
+      padding: 5px;
+      font-size: 14px;
+      margin-bottom: 10px;
+      border-radius: 3px;
+      border: 1px solid #ccc;
+    }
+    
+    .form-container button {
+      display: block;
+      width: 100%;
+      padding: 10px;
+      margin-top: 20px;
+      border-radius: 3px;
+      border: none;
+      background-color: #007bff;
+      color: #fff;
+      cursor: pointer;
+    }
+    
+    .form-container button:hover {
+      background-color: #0069d9;
+    }
+
+    .table {
+      width: 100%;
+      border-collapse: collapse;
+    }
+    
+    .table th, .table td {
+      padding: 10px;
+      text-align: left;
+      border-bottom: 1px solid #ddd;
+    }
+    
+    .table th {
+      background-color: #f2f2f2;
+      font-weight: bold;
+    }
+    
+    .table tr:nth-child(even) {
+      background-color: #f9f9f9;
+    }
+
+    .error-message {
+      color: white;
+      font-size: 20px;
+      margin-top: 10px;
+      background-color: red;
+    }
+
+    .success-message{
+      color: white;
+      font-size: 20px;
+      margin-top: 10px;
+      background-color: green;
+    }
+    
+    
+
+    
